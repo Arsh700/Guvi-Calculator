@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div id="main-container">
+			<div>
+				<div id="input01" title="Enter Number"></div>
+				<p id="result"></p>
+			</div>
+			<div>
+				<div>
+					<div id="input02"></div>
+				</div>
+			</div>
+			<div>
+				<table id="table">
+					<thead>
+						<tr>
+							<td
+								class="operators"
+								id="multiple"
+								onclick="multiple(this)"
+							>
+								*
+							</td>
+							<td
+								onclick="division(this)"
+								class="operators"
+								id="division"
+							>
+								/
+							</td>
+							<td
+								onclick="addition(this)"
+								class="operators"
+								id="addition"
+							>
+								+
+							</td>
+							<td
+								onclick="subtraction(this)"
+								class="operators"
+								id="subtraction"
+							>
+								-
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td
+								onclick="one(this)"
+							>
+								1
+							</td>
+							<td
+								onclick="two(this)"
+							>
+								2
+							</td>
+							<td
+								onclick="three(this)"
+							>
+								3
+							</td>
+							<td
+								onclick="enter(this)"
+								id="enter"
+								rowspan="4"
+							>
+								E
+								<br />
+								n
+								<br />t<br />e<br />r
+							</td>
+						</tr>
+						<tr>
+							<td
+								onclick="four(this)"
+							>
+								4
+							</td>
+							<td
+								onclick="five(this)"
+							>
+								5
+							</td>
+							<td
+								onclick="six(this)"
+							>
+								6
+							</td>
+						</tr>
+						<tr>
+							<td
+								onclick="seven(this)"
+							>
+								7
+							</td>
+							<td
+								onclick="eight(this)"
+							>
+								8
+							</td>
+							<td
+								onclick="nine(this)"
+							>
+								9
+							</td>
+						</tr>
+						<tr>
+							<td
+								onclick="dot(this)"
+							>
+								.
+							</td>
+							<td
+								onclick="zero(this)"
+							>
+								0
+							</td>
+							<td
+								onclick="allClear(this)"
+							>
+								c
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
